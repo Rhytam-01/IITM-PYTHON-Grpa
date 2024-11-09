@@ -4,7 +4,7 @@ with open(__file__) as f:
     content = f.read().split("# <nofor>")[2]
 if "for " in content:
     print("You should not use for loop or the word for anywhere in this exercise")
-'''
+
 # The values of the below variables will be changed by the evaluator
 int_iterable = range(1,10,3)
 string_iterable = ["Apple","Orange", "Banana"]
@@ -17,7 +17,7 @@ yet_another_iterable = range(1,10)
 
 # <nofor>
 # <eoi>
-
+'''
 empty_list = [] 
 empty_set = set() # be carefull here you might end up creating something called as an empty dict 
 empty_tuple = () 
