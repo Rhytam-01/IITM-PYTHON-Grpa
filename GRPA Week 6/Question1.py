@@ -192,7 +192,7 @@ def get_student_data_over_multiple_lines():
         course3 = int(input())
         student_data.append({'rollno': rollno, 'city': city, 'age': age, 'course1': course1, 'course2': course2, 'course3': course3})
     return student_data
-    
+
 # this will read the function name from the input.
 func = eval(input()) 
 
