@@ -23,3 +23,33 @@ keys of the inner dictionary are the compartment names in this train, the values
 (1) The values of the compartments should be represented as integers and not as strings.
 (2) You do not have to print the output to the console. Do not try to print the output that you observe in the "Expected Output". You just have to process the input 
 andcreate the dictionary station_dict'''
+# Function to create the station dictionary
+def create_station_dict():
+    station_dict = {}
+    
+    # Number of trains
+    n = int(input())
+    
+    # Iterate over each train
+    for _ in range(n):
+        # Train name
+        train_name = input().strip()
+        
+        # Number of compartments in the train
+        m = int(input())
+        
+        # Dictionary to store compartment data for this train
+        compartments = {}
+        
+        # Iterate over each compartment
+        for _ in range(m):
+            comp_name, passengers = input().split(',')
+            compartments[comp_name.strip()] = int(passengers.strip())
+        
+        # Add the train and its compartments to the station dictionary
+        station_dict[train_name] = compartments
+    
+    return station_dict
+
+# Example usage:
+station_dict = create_station_dict()
